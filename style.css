@@ -130,9 +130,14 @@ header .navigation li a{
     transition: 0.2s ease-in-out;
 }
 
+.src li button{
+    border: none;
+    background-color: transparent;
+}
+
 .src li a:hover{
   /* background: #830C0F; */
-  transform: translateY(-20px);
+  transform: translateY(-15px);
 }
 
 .src li a img{
