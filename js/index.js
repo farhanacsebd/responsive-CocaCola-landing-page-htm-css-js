@@ -6,6 +6,13 @@ const btnVanilla = document.getElementById("btnVanilla");
 const addImg = document.getElementById("addImg");
 // console.log(addImg.parentElement.parentElement.children[2].children[0].children[2]);
 
+function toggleMenu() {
+  const menuToggle = document.querySelector(".toggle");
+  const navigation = document.querySelector(".navigation");
+  menuToggle.classList.toggle("active");
+  navigation.classList.toggle("active");
+}
+
 btnRed.addEventListener("click", (e) => {
   e.preventDefault();
   addImg.textContent = "";
@@ -56,6 +63,7 @@ btnOrange.addEventListener("click", (e) => {
   // this only bg color
   addImg.parentElement.parentElement.style.backgroundColor = "#7A7670";
   addImg.parentElement.parentElement.children[0].style.backgroundColor = "#F88F00";
+
   // this is only button part
   addImg.parentElement.parentElement.children[2].children[0].children[2].style.backgroundColor = "#F18100";
   addImg.parentElement.parentElement.children[2].children[0].children[2].style.color = "#fff";
